@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+
+.main-navigation {
+    background-color: rgb(255, 153, 0);
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.but {
+    background: red;
+    margin : 0px 0px 30px 50px;
+    animation: hello 2s linear infinite;
+    position: absolute;
+    margin: auto;
+}
+
+@keyframes hello {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+          background-color: green;
+    }
+
+    100% {
+        background-color: yellow;
+    }
+}
+
+.main-navigation ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    margin: 0;
+}
+
+.main-navigation ul li {
+    display: block;
+
+}
+
+.button {
+    display: block;
+    background-color: blue;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.layout-wrapper {
+    position: relative;
+}
+
+.sidebar {
+    top: 0;
+    bottom: 0;
+    width: 10em;
+}
+
+.content {
+    overflow: scroll;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 10em;
+}
